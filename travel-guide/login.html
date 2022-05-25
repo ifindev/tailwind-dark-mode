@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelu - Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.15.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
       * {
@@ -14,8 +20,8 @@
     </style>
   </head>
   <body>
-    <section class="h-screen w-screen bg-gray-100 font-sans">
-      <div class="container mx-auto px-10 pt-12">
+    <section class="w-screen bg-gray-100 font-sans">
+      <div class="container mx-auto px-10 py-12">
         <!-- image -->
         <div class="flex justify-center items-center">
           <img class="w-60" src="./assets/register.svg" alt="" />
@@ -59,7 +65,7 @@
           </div>
 
           <!-- sign in with email -->
-          <div class="flex justify-center items-center my-6">
+          <div class="flex justify-center items-center mt-6">
             <div class="h-px bg-gray-400 w-1/2"></div>
             <p class="text-center w-full text-gray-400">
               or Sign in with Email
@@ -67,36 +73,59 @@
             <div class="h-px bg-gray-400 w-1/2"></div>
           </div>
 
-          <div class="my-6">
+          <!-- email form -->
+          <div class="mt-4">
             <form>
-              <div>
-                <div>
-                  <label for="email">Email*</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="example@gmail.com"
-                  />
-                </div>
-                <div>
-                  <label for="password">Password*</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Min. 8 character"
-                  />
-                </div>
+              <div class="flex flex-col">
+                <label class="text-gray-700" for="email">Email*</label>
+                <input
+                  class="mt-2 p-2 rounded border-2 border-gray-200 focus:outline-none focus:border-gray-400 transition duration-200"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@gmail.com"
+                />
               </div>
-              <div>
-                <input type="checkbox" name="" id="" />
-                <span>Keep me signed in</span>
+              <div class="flex flex-col mt-3">
+                <label class="text-gray-700" for="password">Password*</label>
+                <input
+                  class="mt-2 p-2 rounded border-2 border-gray-300 focus:outline-none focus:border-gray-400 transition duration-200"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Min. 8 character"
+                />
               </div>
-              <div><button>LOGIN</button></div>
-              <div>
-                <p><a href="#">Forgot password?</a></p>
-                <p>Do not have an account? <a href="#">Sign Up</a></p>
+
+              <div class="flex items-center mt-7 relative">
+                <input
+                  type="checkbox"
+                  class="border-[2px] border-gray-300 w-[18px] h-[18px] checkbox"
+                />
+                <span class="ml-2 text-gray-700">Keep me signed in</span>
+              </div>
+              <div class="mt-4 w-full">
+                <button
+                  class="w-full px-4 py-2 bg-gray-900 text-white font-semibold rounded-md"
+                >
+                  LOGIN
+                </button>
+              </div>
+
+              <!-- forgot password -->
+              <div class="text-center mt-6">
+                <p>
+                  <a
+                    class="text-gray-700 font-semibold cursor-pointer"
+                    href="#"
+                  >
+                    Forgot password?
+                  </a>
+                </p>
+                <p class="mt-2">
+                  <span class="text-gray-500"> Do not have an account? </span>
+                  <a class="text-gray-700 font-semibold" href="#">Sign Up</a>
+                </p>
               </div>
             </form>
           </div>
