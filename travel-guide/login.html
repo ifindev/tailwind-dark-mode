@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelu - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+      * {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="h-screen w-screen bg-gray-100 font-sans">
+      <div class="container mx-auto px-10 pt-12">
+        <!-- image -->
+        <div class="flex justify-center items-center">
+          <img class="w-60" src="./assets/register.svg" alt="" />
+        </div>
+
+        <!-- button groups -->
+        <div class="mt-10">
+          <div class="my-6">
+            <h1 class="text-4xl font-extrabold text-gray-800">Welcome</h1>
+            <p class="mt-2 text-gray-700">
+              Login or create an account to continue
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <button
+              class="flex items-center justify-center px-4 py-2 bg-blue-500 text-white font-semibold rounded"
+            >
+              <img
+                class="w-5 h-5"
+                src="./assets/google.svg"
+                alt="google icon"
+              />
+              <span class="ml-2"> Sign in with Google </span>
+            </button>
+            <button
+              class="flex items-center justify-center mt-3 px-4 py-2 bg-gray-900 text-white font-semibold rounded"
+            >
+              <img class="w-5 h-5" src="./assets/apple.svg" alt="google icon" />
+              <span class="ml-2"> Sign in with Apple </span>
+            </button>
+            <button
+              class="flex items-center justify-center mt-3 px-4 py-2 bg-sky-900 text-white font-semibold rounded"
+            >
+              <img
+                class="w-5 h-5"
+                src="./assets/facebook.svg"
+                alt="google icon"
+              />
+              <span class="ml-2"> Sign in with Facebook </span>
+            </button>
+          </div>
+
+          <!-- sign in with email -->
+          <div class="flex justify-center items-center my-6">
+            <div class="h-px bg-gray-400 w-1/2"></div>
+            <p class="text-center w-full text-gray-400">
+              or Sign in with Email
+            </p>
+            <div class="h-px bg-gray-400 w-1/2"></div>
+          </div>
+
+          <div class="my-6">
+            <form>
+              <div>
+                <div>
+                  <label for="email">Email*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+                <div>
+                  <label for="password">Password*</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Min. 8 character"
+                  />
+                </div>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="" />
+                <span>Keep me signed in</span>
+              </div>
+              <div><button>LOGIN</button></div>
+              <div>
+                <p><a href="#">Forgot password?</a></p>
+                <p>Do not have an account? <a href="#">Sign Up</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
